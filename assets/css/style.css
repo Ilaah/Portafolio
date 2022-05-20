@@ -4,11 +4,11 @@
   --text-size-titles: 35px;
   --font-weight-titles: 700;
   --navbar-height: 60px;
-  --text-size_nav: 20px;
+  --text-size_nav: 25px;
   --size-socialMedia: 50px;
   --general-text_color: rgb(245, 227, 248);
   --color-socialMedia: rgba(255, 255, 255, 0.793);
-  --font-size_general: 16px;
+  --font-size_general: 17px;
   --space--height: 60px;
   --favorite-font-family: 'Montserrat', sans-serif;
 }
@@ -16,6 +16,7 @@
 @media (min-width: 768px) {
   :root {
     --text-size_nav: 17px
+    --font-size_general: 24px;
   }
 }
 
@@ -27,6 +28,7 @@ html {
   font-size: var(--font-size_general);
   font-family: var(--favorite-font-family);
   color: var(--general-text_color);
+  padding: 0;
 }
 
 *,
@@ -63,17 +65,17 @@ body{
   font-weight: 500;
   color: var(--introduction-color);
   text-align: justify;
-  width: 85%;
+  max-width: 400px;
 }
 
 .navbar {
   display: flex;
   background: rgb(133, 110, 191);
-  background: linear-gradient(90deg, rgb(28, 11, 15, 0.9) 2%, rgb(28, 11, 15, 0.9) 43%, rgb(39, 22, 28) 89%);
+  background: linear-gradient(90deg, rgb(28, 11, 15, 1) 2%, rgb(28, 11, 15, 1) 43%, rgb(39, 22, 28) 89%);
   width: 100%;
   height: var(--navbar-height);
   justify-content: flex-end;
-  border-bottom: 3px solid rgba(101, 15, 78, 0.351);
+  border-bottom: 3px solid rgba(101, 15, 78, 0.3);
   position: sticky;
   top: 0px;
   z-index: 1;
@@ -127,7 +129,7 @@ body{
   border-top-right-radius: 8%;
   border-bottom-left-radius: 8%;
   border-bottom-right-radius: 22%;
-  background-color: rgba(90, 49, 49, 0.336);
+  background-color: rgba(90, 49, 49, 0.487);
   height: 100px;
   width: 60%;
   bottom: 10px;
@@ -147,6 +149,7 @@ body{
 .social {
   color: var(--color-socialMedia);
   font-size: var(--size-socialMedia);
+  
 }
 
 
@@ -162,8 +165,8 @@ body{
     justify-content: center;
     overflow: hidden;
     transition: all .3s ease-in-out;
-    backdrop-filter: saturate(120%) blur(16px);
-    -webkit-backdrop-filter: saturate(120%) blur(16px);
+    backdrop-filter: saturate(120%) blur(7px);
+    -webkit-backdrop-filter: saturate(120%) blur(7px);
   }
 
   .navbar__menu {
@@ -176,8 +179,8 @@ body{
 }
 
 .navbar__nav.active {
-  padding: 20px 0;
-  height: auto;
+  padding: 50px 0;
+  height: 100vh;
 }
 
 .navbar__nav.active .navbar__menu {
@@ -213,6 +216,9 @@ body {
   background: linear-gradient(90deg, rgba(133, 110, 191, 0.8) 2%, rgba(139, 62, 118, 0.8) 43%, rgba(33, 10, 18, 0.8) 89%);
 }
 
+.introduction__name2 {
+  display: none;
+}
 .introduction {
   display: flex;
   flex-direction: column;
@@ -226,6 +232,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+
+
+.introduction__img {
+  max-width: 320px;
+  border-radius: 50px;
+  border: 2px solid pink;
 }
 
 .space {
@@ -254,6 +268,13 @@ body {
   gap: 2px;
   justify-content: center;
   align-items: center;
+  max-width: 210px;
+  height: 200px;
+
+  border-radius: 50px;
+  background-color: rgba(255, 192, 203, 0.187);
+  box-shadow: 2px 2px 2px 2px rgba(39, 22, 28, 0.5);
+  
 }
 .aboutMe__studies--subtitlte{
   color: var(--general-text_color);
@@ -266,9 +287,13 @@ body {
   height: auto;
 }
 
-.abouteMe--negritas {
+.abouteMe__negritas {
   font-weight: 600;
   font-size: 20px;
+}
+
+.abouteMe__text {
+  text-justify: center;
 }
 
 .skills {
@@ -293,8 +318,8 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.534);
   display: flex;
   flex-direction: column;
-  width: 45%;
-  height: 22%;
+  max-width: 200px;
+  height: 170px;
   align-items: center;
   justify-content: space-evenly;
   text-shadow: 1px 1px 5px rgba(215, 147, 147, 0.551);
@@ -303,8 +328,8 @@ body {
 .skill__CSS:hover,
 .skill__HTML:hover,
 .skill__JS:hover {
-  width: 47%;
-  height: 23%;
+  max-width: 210px;
+  height: 180px;
   transition: .5s;
 }
 
@@ -331,14 +356,18 @@ body {
   background-position: center;
 }
 
+.portfolio__title {
+  margin-bottom: 20px;
+}
+
 .portfolio__projects {
   display: inherit;
   flex-direction: column;
-  width: 55%;
+  width: 400px;
   height: 80%;
   align-items: center;
   justify-content: space-evenly;
-  gap: 15px;
+  gap: 20px;
 }
 
 .portfolio__project1, 
@@ -349,18 +378,22 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  width: 60%;
   background-color: rgba(139, 34, 101, 0.505);
   box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.493) inset,
   5px 3px 3px 5px rgba(0, 0, 0, 0.493);
 }
 
+.portfolio__link1,
+.portfolio__link2,
 .portfolio__link3 {
   width: 100%;
   text-align: center;
+  margin-top: 8px;
 }
 
 .portfolio__project--img {
-  width: 80%;
+  width: 90%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 8px;
@@ -368,7 +401,7 @@ body {
 }
 
 .portfolio__project--title{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -391,4 +424,130 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.contact__box {
+  display: flex;
+  flex-direction: row;
+  width: 450px;
+  height: 70%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact_whatsapp,
+.contact__email {
+  display: flex;
+  width: 40%;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  box-shadow: 1px 1px 3px 2px pink;
+  background: linear-gradient(90deg, rgb(28, 11, 15, 0.5) 2%, rgb(28, 11, 15, 0.5) 43%, rgb(39, 22, 28, 05) 89%);
+}
+
+.whatsapp,
+.email {
+  display: inherit;
+  flex-direction: column;
+}
+
+.bxl-whatsapp,
+.bx-envelope {
+  font-size: 180px;
+  color: var(--general-text_color);
+}
+
+.contactMe {
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  text-decoration: none;
+  outline: none;
+  border-radius: 50px;
+  text-justify:                                                                                                                                                                                                                                                                 ;
+}
+
+.contactMe:hover {
+  cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .titles {
+    font-size: 70px;
+  }
+
+  .text {
+    max-width: 900px;
+    font-size: 28px;
+  }
+
+  .introduction {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .introduction__desarrollador {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+
+  .introduction__name {
+    display: none;
+  }
+
+  .introduction__name2 {
+    display: flex;
+    margin-bottom: 100px;
+  }
+
+  .introduction__img {
+    max-width: 400px;
+    border-radius: 50px;
+    border: 2px solid pink;
+  }
+
+  .aboutMe__studies {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .aboutMe__studies-img {
+    max-width: 900px;
+  }
+
+  .aboutMe__studies--years{
+
+  }
+
+  .portfolio{
+    height: 100vh;
+  }
+  .portfolio__projects {
+    flex-direction: row;
+    width: 1100px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .portfolio__project1,
+  .portfolio__project2,
+  .portfolio__project3{
+    max-width: 300px;
+  }
+
+  .portfolio__project1:hover,
+  .portfolio__project2:hover,
+  .portfolio__project3:hover{
+    margin-bottom: 25px;
+    transition: .3s;
+  }
+
+  .portfolio__project--title{
+    font-size: 24px;
+  }
 }

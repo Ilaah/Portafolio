@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <header class="navbar">
         <div class="navbar__container">
 
@@ -58,19 +59,26 @@
             </div>
         </div>
     </header>
+    <!-- HOME PAGE -->
     <section id="intro" class="introduction">
         <h2 class="introduction__name titles">Hola, soy Julio</h2>
-        <img src="assets/img/Noa.jpg" class="introduction__img">
-        <h2 class="introduction__WD titles">Desarrollador Web</h2>
-        <p class="introduction__text text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, quaerat at! Tempora quo necessitatibus
-            soluta eligendi ipsam, ad deserunt maxime facere libero, pariatur autem, delectus ipsa error rem deleniti
-            enim!
-        </p>
+        <img src="assets/img/yo.jpg" class="introduction__img">
+        <div class="introduction__desarrollador">
+            <h2 class="introduction__name2 titles">Hola, soy Julio</h2>
+            <h2 class="introduction__WD titles">Desarrollador Web</h2>
+            <p class="introduction__text text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, quaerat at! Tempora quo
+                necessitatibus
+                soluta eligendi ipsam, ad deserunt maxime facere libero, pariatur autem, delectus ipsa error rem
+                deleniti
+                enim!
+            </p>
+        </div>
     </section>
 
     <div class="space"></div>
 
+    <!-- ABOUT ME -->
     <div id="about" class="aboutMe">
         <h2 class="aboutMe__title titles">Acerca de mí</h2>
         <p class="aboutMe__text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus iusto eos at
@@ -79,52 +87,54 @@
             modi ab, odio cum amet? Tempora a odit ex, ut doloremque inventore atque sint!</p>
         <div class="aboutMe__studies">
             <h2 class="aboutMe__studies--subtitlte">Estudios</h2>
-
             <img src="assets/img/Logo_Aca.png" class="aboutMe__studies-img">
-            <span class="abouteMe--negritas">Academlo</span>
+            <span class="abouteMe__negritas">Academlo</span>
+            <p class="aboutMe__studies--years">2022</p>
         </div>
     </div>
 
     <div class="space"></div>
 
+    <!-- SKILLS -->
     <div id="skill" class="skills">
-        <h2 class="skills__meter titles">Habilidades</h2>
+        <h2 class="skills__title titles">Habilidades</h2>
         <div class="skill__CSS">
             <p class="skills__name subtitles">CSS3</p>
             <img src="assets/img/CSS.png" class="skill__CSS--img">
-            <div class="skills__meter--CSS"></div>
         </div>
 
         <div class="skill__HTML">
             <p class="skills__name subtitles">HTML5</p>
             <img src="assets/img/HTML.png" class="skill__HTML--img">
-            <div class="skills__meter--HTML"></div>
         </div>
 
         <div class="skill__JS">
             <p class="skills__name subtitles">JavaScript</p>
             <img src="assets/img/JS.png" class="skill__JS--img">
-            <div class="skills__meter--JS"></div>
         </div>
     </div>
 
     <div class="space"></div>
 
+    <!-- PORTFOLIO -->
     <div id="portf" class="portfolio">
-        <h2 class="porfolio__title titles">Portafolio</h2>
+        <h2 class="portfolio__title titles">Portafolio</h2>
         <div class="portfolio__projects">
             <div class="portfolio__project1">
-                <img src="assets/img/project1.png" class="portfolio__project--img">
+                <a href="" class="portfolio__link1"><img src="assets/img/project1.png"
+                        class="portfolio__project--img"></a>
                 <h3 class="portfolio__project--title">Project 1</h3>
                 <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
             <div class="portfolio__project2">
-                <img src="assets/img/project2.png" class="portfolio__project--img">
+                <a href="" class="portfolio__link2"><img src="assets/img/project2.png"
+                        class="portfolio__project--img"></a>
                 <h3 class="portfolio__project--title">Project 2</h3>
                 <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
             <div class="portfolio__project3">
-                <a href="" class="portfolio__link3"><img src="assets/img/project3.png" class="portfolio__project--img"></a>
+                <a href="" class="portfolio__link3"><img src="assets/img/project3.png"
+                        class="portfolio__project--img"></a>
                 <h3 class="portfolio__project--title">Project 3</h3>
                 <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
@@ -133,10 +143,23 @@
 
     <div class="space"></div>
 
+    <!-- CONTACT -->
     <div id="cont" class="contact">
         <h2 class="contact__title titles">Contacto</h2>
-        <div class="contact__number"></div>
-        <div class="contact__email"></div>
+        <div class="contact__box">
+            <div class="contact_whatsapp">
+                <a href="" class="whatsapp">
+                    <i class='bx bxl-whatsapp'></i>
+                    <div class="contactMe">Escríbeme por whatsapp</div>
+                </a>
+            </div>
+            <div class="contact__email">
+                <a href="" class="email">
+                    <i class='bx bx-envelope'></i>
+                    <div class="contactMe">Mándame un email</div>
+                </a>
+            </div>
+        </div>
     </div>
 
     <script src="assets\js\main.js"></script>
