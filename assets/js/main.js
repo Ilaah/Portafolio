@@ -17,8 +17,8 @@ function toggleMenu () {
 navbarBtn.addEventListener("click", toggleMenu)
 
 /*Desactivar*/
-home.addEventListener("click", toggleMenu)
-aboutMe.addEventListener("click", toggleMenu)
-skills.addEventListener("click", toggleMenu)
-portfolio.addEventListener("click", toggleMenu)
-contact.addEventListener("click", toggleMenu)
+// home.addEventListener("click", toggleMenu)
+// aboutMe.addEventListener("click", toggleMenu)
+// skills.addEventListener("click", toggleMenu)
+// portfolio.addEventListener("click", toggleMenu)
+// contact.addEventListener("click", toggleMenu)
