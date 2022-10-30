@@ -8,7 +8,9 @@
     <title>Julio</title>
     <link rel="shortcut icon" href="assets/img/Julio&Mich.svg">
     <link rel="stylesheet" href="assets\css\style.css">
+    <script src="https://kit.fontawesome.com/8eb019b6e8.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -33,49 +35,36 @@
                     <li class="navbar__item">
                         <a href='#cont' class="navbar__link cont">Contacto</a>
                     </li>
-                    <div class="navbar__socialMedia">
-                        <div class="navbar__red">
-                            <a href="" class="linkedIn">
-                                <i class='bx bxl-linkedin-square social'></i>
-                            </a>
-                        </div>
-                        <div class="navbar__red">
-                            <a href="" class="instagram">
-                                <i class='bx bxl-instagram-alt social'></i>
-                            </a>
-                        </div>
-                        <div class="navbar__red">
-                            <a href="" class="twitter">
-                                <i class='bx bxl-twitter social'></i>
-                            </a>
-                        </div>
-                    </div>
                 </ul>
             </nav>
 
             <div class="navbar__btn">
                 <button id="navbarBtn" class="navbar__btn-link">
-                    <i class='bx bx-menu'></i>
+                    <i class='bx bx-menu open-menu'></i>
+                    <i class="fa-solid fa-xmark close-menu"></i>
                 </button>
             </div>
         </div>
     </header>
     <!-- HOME PAGE -->
     <div id="intro" class="introduction">
+        <div class="introduction__decoration"></div>
         <div class="introduction__box">
             <h2 class="introduction__name titles">Hola, soy Julio</h2>
-            <img src="assets/img/yo.jpg" class="introduction__img">
+            <img src="assets/img/yo.png" class="introduction__img">
             <div class="introduction__desarrollador">
                 <h2 class="introduction__name2 titles">Hola, soy Julio</h2>
-                <h2 class="introduction__WD titles">Desarrollador Web</h2>
-                <p class="introduction__text text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, quaerat at! Tempora quo
-                    necessitatibus
-                    soluta eligendi ipsam, ad deserunt maxime facere libero, pariatur autem, delectus ipsa error rem
-                    deleniti
-                    enim!
-                </p>
+                <h2 class="introduction__WD titles">Desarrollador Web Front-End</h2>
+                <p class="introduction__text text">Estoy enfocado en crecer y hacer crecer; fomentando la comunicación,
+                    aportando y recibiendo feedback y ayuda de manera positiva para promover la máxima eficiencia y
+                    crecimiento
+                    en los proyectos que realizo.</p>
+                <section class="introduction-btn-container">
+                    <a href="https://drive.google.com/file/d/1BAmUBaVolliCB-yunRUrIVAGAOP2YjgP/view?usp=share_link" target="_blank"><button class="introduction-btn">Explora mi CV</button></a>
+                    <a href=#cont><button class="introduction-btn">Contáctame</button></a>
+                </section>
             </div>
+            <div class="introduction__box-decoration"></div>
         </div>
     </div>
 
@@ -85,16 +74,32 @@
     <div id="about" class="aboutMe">
         <div class="aboutMe__box">
             <h2 class="aboutMe__title titles">Acerca de mí</h2>
-            <p class="aboutMe__text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus iusto eos
-                at
-                eius.
-                Quaerat impedit error
-                modi ab, odio cum amet? Tempora a odit ex, ut doloremque inventore atque sint!</p>
+            <p class="aboutMe__text text">Soy un Desarrollador Web Front-End con experiencia en React JS. He
+                desarrollado proyectos solo y en conjunto con otros programadores, creciendo con rápidez. Soy alguien
+                tranquilo, amable y sobre todo comunicativo. Me gustan los videojuegos.</p>
+            <h2 class="aboutMe__studies--subtitlte">Estudios</h2>
             <div class="aboutMe__studies">
-                <h2 class="aboutMe__studies--subtitlte">Estudios</h2>
                 <img src="assets/img/Logo_Aca.png" class="aboutMe__studies-img">
-                <span class="abouteMe__negritas">Academlo</span>
-                <p class="aboutMe__studies--years">2022</p>
+                <div class="aboutMe__separator">
+                    <span class="abouteMe__negritas">Fundamentos en HTML, CSS y JavaScript</span>
+                    <p>Academlo - Academia de Tecnología y Ciencias de la Computación</p>
+                    <p class="aboutMe__studies--years">Febrero 2022 - Mayo 2022</p>
+                    <a class="aboutMe__studies-link" href="https://certificates.academlo.com/en/verify/32836971280311"
+                        target="_blank"> <button class="aboutMe_studies-btn">Certificado <i
+                                class="fa-regular fa-share-from-square"></i></button> </a>
+                </div>
+            </div>
+
+            <div class="aboutMe__studies">
+                <img src="assets/img/Logo_Aca.png" class="aboutMe__studies-img">
+                <div class="aboutMe__separator">
+                    <span class="abouteMe__negritas">Desarrollo Front-End con React</span>
+                    <p>Academlo - Academia de Tecnología y Ciencias de la Computación</p>
+                    <p class="aboutMe__studies--years">Mayo 2022 - Julio 2022</p>
+                    <a class="aboutMe__studies-link" href="https://certificates.academlo.com/en/verify/66352754872682"
+                        target="_blank"> <button class="aboutMe_studies-btn">Certificado <i
+                                class="fa-regular fa-share-from-square"></i></button> </a>
+                </div>
             </div>
         </div>
     </div>
@@ -103,22 +108,53 @@
 
     <!-- SKILLS -->
     <div id="skill" class="skills">
-        <div class="skills__box">
-            <h2 class="skills__title titles">Habilidades</h2>
-            <div class="skills__cards">
-                <div class="skill__CSS">
-                    <p class="skills__name subtitles">CSS3</p>
-                    <img src="assets/img/CSS.png" class="skill__CSS--img">
-                </div>
+        <h2 class="skills__title titles">Habilidades</h2>
+        <div class="skills__group">
+            <div class="soft-skills">
+                <h2 class="subtitles">Blandas</h2>
+                <section class="soft-skills__list">
+                    <div class="soft-skill">
+                        <h2 class="subtitles">Comunicación</h2>
+                        <p>Ya sea en mi vida personal como en la laboral, siempre he
+                            priorizado la comunicación como la mejor herramienta para la resolución de problemas.
+                        </p>
+                    </div>
+                    <div class="soft-skill">
+                        <h2 class="subtitles">Trabajo en equipo</h2>
+                        <p>El trabajo en equipo es fundamental en toda empresa y lo sé perfectamente;
+                            cooperar para mayor eficiencia y ayudarse mutuamente es la base del crecimiento.
+                        </p>
+                    </div>
+                    <div class="soft-skill">
+                        <h2 class="subtitles">Curiosidad</h2>
+                        <p>Me gusta que me hagan preguntas, así como me gusta preguntar sin temor
+                            o pena alguna para promover la confianza, respeto y desarrollo de todos.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="skills__box">
+                <h2 class="subtitles">Técnicas</h2>
+                <div class="skills__cards">
+                    <div class="skill__CSS">
+                        <p class="skills__name subtitles">CSS3</p>
+                        <img src="assets/img/CSS.png" class="skill__CSS--img">
+                    </div>
 
-                <div class="skill__HTML">
-                    <p class="skills__name subtitles">HTML5</p>
-                    <img src="assets/img/HTML.png" class="skill__HTML--img">
-                </div>
+                    <div class="skill__HTML">
+                        <p class="skills__name subtitles">HTML5</p>
+                        <img src="assets/img/HTML.png" class="skill__HTML--img">
+                    </div>
 
-                <div class="skill__JS">
-                    <p class="skills__name subtitles">JavaScript</p>
-                    <img src="assets/img/JS.png" class="skill__JS--img">
+                    <div class="skill__JS">
+                        <p class="skills__name subtitles">JavaScript</p>
+                        <img src="assets/img/JS.png" class="skill__JS--img">
+                    </div>
+
+                    <div class="skill__JS">
+                        <p class="skills__name subtitles">React</p>
+                        <img src="assets/img/REACT.png" class="skill__JS--img">
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,22 +168,32 @@
             <h2 class="portfolio__title titles">Portafolio</h2>
             <div class="portfolio__projects">
                 <div class="portfolio__project1">
-                    <a href="" class="portfolio__link1"><img src="assets/img/project1.png"
-                            class="portfolio__project--img"></a>
-                    <h3 class="portfolio__project--title">Project 1</h3>
-                    <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="https://il-rickandmortylocations.netlify.app" target='_blank' class="portfolio__link1">
+                        <img src="assets/img/project1.png" class="portfolio__project--img">
+                        <h3 class="portfolio__project--title subtitles">Rick And Morty</h3>
+                    </a>
+                    <p class="portfolio__text">Es un proyecto donde puedes consultar locaciones del universo de
+                        Rick And Morty buscando mediante un número comprendido entre el 1 y el 126.</p>
                 </div>
+
                 <div class="portfolio__project2">
-                    <a href="" class="portfolio__link2"><img src="assets/img/project2.png"
-                            class="portfolio__project--img"></a>
-                    <h3 class="portfolio__project--title">Project 2</h3>
-                    <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="https://il-pokedex.netlify.app" target="_blank" class="portfolio__link2">
+                        <img src="assets/img/project2.png" class="portfolio__project--img">
+                        <h3 class="portfolio__project--title subtitles">Pokédex</h3>
+                    </a>
+                    <p class="portfolio__text">Es un sitio web completo en el cual podrás buscar y encontrar tus
+                        pokémones favoritos, o filtrarlos por categoría; e incluso puedes alternar el modo de
+                        visualización.</p>
                 </div>
+
                 <div class="portfolio__project3">
-                    <a href="" class="portfolio__link3"><img src="assets/img/project3.png"
-                            class="portfolio__project--img"></a>
-                    <h3 class="portfolio__project--title">Project 3</h3>
-                    <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="https://il-weather-app.netlify.app" target='_blank' class="portfolio__link3">
+                        <img src="assets/img/project3.png" class="portfolio__project--img">
+                        <h3 class="portfolio__project--title subtitles">Weather App</h3>
+                    </a>
+                    <p class="portfolio__text">Es una linda y sencilla app que te pedirá acceso a tu ubicación
+                        para darte el clima de la ciudad donde te encuentres, puedes alternar entre grados C° y F°.
+                    </p>
                 </div>
             </div>
         </div>
@@ -159,18 +205,18 @@
     <div id="cont" class="contact">
         <h2 class="contact__title titles">Contacto</h2>
         <div class="contact__box">
-            <div class="contact_whatsapp">
-                <a href="https://wa.me/529931093194?text=Hola!" class="whatsapp">
-                    <i class='bx bxl-whatsapp'></i>
+            <a href="https://wa.me/529931093194?text=Hola!" class="contact-red whatsapp" target="_blank">
+                <i class='bx bxl-whatsapp contact-icon'></i>
 
-                </a>
-            </div>
-            <div class="contact__email">
-                <a href="mailto:julio4003@hotmail.com" class="email">
-                    <i class='bx bx-envelope'></i>
+            </a>
+            <a href="mailto:julio4003@hotmail.com" class="contact-red email" target="_blank">
+                <i class='bx bx-envelope contact-icon'></i>
 
-                </a>
-            </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/julio-enrique/" class="contact-red linkedin" target="_blank">
+                <i class="fa-brands fa-linkedin contact-icon"></i>
+            </a>
         </div>
     </div>
 

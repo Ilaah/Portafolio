@@ -1,5 +1,7 @@
 const navbarBtn = document.getElementById('navbarBtn')
 const navbarNav = document.querySelector('.navbar__nav')
+const menuIcon = document.querySelector('.bx-menu')
+const closeMenu = document.querySelector('.close-menu')
 
 const home = document.querySelector('.intro')
 const aboutMe = document.querySelector('.about')
@@ -11,6 +13,8 @@ const contact = document.querySelector('.cont')
 
 function toggleMenu () {
   navbarNav.classList.toggle('active')
+  menuIcon.classList.toggle('open-menu__off')
+  closeMenu.classList.toggle('close-menu__active')
 }
 
 /*Activar*/
