@@ -336,6 +336,27 @@ body {
   gap: 10px;
 }
 
+@keyframes left-to-right {
+  0%{transform:rotateZ(8deg);
+  }
+
+  15%{transform:rotateZ(-8deg);;
+  }
+
+  30%{transform: rotateZ(8deg);;
+  }
+
+  45%{transform: rotateZ(-8deg);;
+  }
+
+  60%{transform: rotateZ(8deg);;
+  }
+
+  75%{transform: rotateZ(-8deg);}
+  
+  90%{transform: rotateZ(8deg);}
+}
+
 .introduction-btn {
   border: none;
   border-radius: 20px;
@@ -347,6 +368,11 @@ body {
   align-self: flex-start;
   margin-top: 10px;
   cursor: pointer;
+}
+
+.introduction-btn__contact {
+  animation-name: left-to-right;
+  animation-duration: 1300ms;
 }
 
 .introduction-btn:hover {
@@ -726,8 +752,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .contact__box {
@@ -757,6 +783,11 @@ body {
 
 .contactMe:hover {
   cursor: pointer;
+}
+
+.footer-msg {
+  font-size: 16px;
+  margin-top: 40px;
 }
 
 @media (min-width: 768px) {
@@ -885,8 +916,8 @@ body {
   .portfolio__project1:hover,
   .portfolio__project2:hover,
   .portfolio__project3:hover {
-    transform: scale(1.03) translateY(-10px);
-    transition: .3s;
+    transform: scale(1.03) translateY(-10px) !important;
+    transition: .3s !important;
   }
 
 
@@ -897,7 +928,8 @@ body {
   .contact-red:hover {
     background: var(--general-text_color);
     color: #241319;
-    transition: 400ms ease;
+    transition: 400ms ease !important;
     box-shadow: 1px 1px 9px 3px rgba(255, 149, 232, 0.46);
+    transform: scale(1.05) !important;
   }
 }

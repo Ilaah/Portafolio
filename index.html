@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julio</title>
     <link rel="shortcut icon" href="assets/img/Julio&Mich.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets\css\style.css">
     <script src="https://kit.fontawesome.com/8eb019b6e8.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -49,7 +50,7 @@
     <!-- HOME PAGE -->
     <div id="intro" class="introduction">
         <div class="introduction__decoration"></div>
-        <div class="introduction__box">
+        <div class="introduction__box" data-aos="fade-up">
             <h2 class="introduction__name titles">Hola, soy Julio</h2>
             <img src="assets/img/yo.png" class="introduction__img">
             <div class="introduction__desarrollador">
@@ -60,12 +61,14 @@
                     crecimiento
                     en los proyectos que realizo.</p>
                 <section class="introduction-btn-container">
-                    <a href="https://drive.google.com/file/d/1BAmUBaVolliCB-yunRUrIVAGAOP2YjgP/view?usp=share_link" target="_blank"><button class="introduction-btn">Explora mi CV</button></a>
-                    <a href=#cont><button class="introduction-btn">Contáctame</button></a>
+                    <a href="https://drive.google.com/file/d/1BAmUBaVolliCB-yunRUrIVAGAOP2YjgP/view?usp=share_link"
+                        target="_blank"><button class="introduction-btn">Explora mi CV</button></a>
+                    <a href=#cont><button class="introduction-btn introduction-btn__contact" data-aos="zoom-in-up" data-aos-offset="100"
+                            data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">Contáctame</button></a>
                 </section>
             </div>
-            <div class="introduction__box-decoration"></div>
         </div>
+        <div class="introduction__box-decoration"></div>
     </div>
 
     <div class="space"></div>
@@ -78,7 +81,8 @@
                 desarrollado proyectos solo y en conjunto con otros programadores, creciendo con rápidez. Soy alguien
                 tranquilo, amable y sobre todo comunicativo. Me gustan los videojuegos.</p>
             <h2 class="aboutMe__studies--subtitlte">Estudios</h2>
-            <div class="aboutMe__studies">
+
+            <div class="aboutMe__studies" data-aos="fade-right">
                 <img src="assets/img/Logo_Aca.png" class="aboutMe__studies-img">
                 <div class="aboutMe__separator">
                     <span class="abouteMe__negritas">Fundamentos en HTML, CSS y JavaScript</span>
@@ -90,7 +94,7 @@
                 </div>
             </div>
 
-            <div class="aboutMe__studies">
+            <div class="aboutMe__studies" data-aos="fade-right">
                 <img src="assets/img/Logo_Aca.png" class="aboutMe__studies-img">
                 <div class="aboutMe__separator">
                     <span class="abouteMe__negritas">Desarrollo Front-End con React</span>
@@ -113,19 +117,19 @@
             <div class="soft-skills">
                 <h2 class="subtitles">Blandas</h2>
                 <section class="soft-skills__list">
-                    <div class="soft-skill">
+                    <div class="soft-skill" data-aos="fade-up-right">
                         <h2 class="subtitles">Comunicación</h2>
                         <p>Ya sea en mi vida personal como en la laboral, siempre he
                             priorizado la comunicación como la mejor herramienta para la resolución de problemas.
                         </p>
                     </div>
-                    <div class="soft-skill">
+                    <div class="soft-skill" data-aos="fade-up">
                         <h2 class="subtitles">Trabajo en equipo</h2>
                         <p>El trabajo en equipo es fundamental en toda empresa y lo sé perfectamente;
                             cooperar para mayor eficiencia y ayudarse mutuamente es la base del crecimiento.
                         </p>
                     </div>
-                    <div class="soft-skill">
+                    <div class="soft-skill" data-aos="fade-up-left">
                         <h2 class="subtitles">Curiosidad</h2>
                         <p>Me gusta que me hagan preguntas, así como me gusta preguntar sin temor
                             o pena alguna para promover la confianza, respeto y desarrollo de todos.
@@ -136,22 +140,22 @@
             <div class="skills__box">
                 <h2 class="subtitles">Técnicas</h2>
                 <div class="skills__cards">
-                    <div class="skill__CSS">
+                    <div class="skill__CSS" data-aos="fade-up" data-aos-duration="400">
                         <p class="skills__name subtitles">CSS3</p>
                         <img src="assets/img/CSS.png" class="skill__CSS--img">
                     </div>
 
-                    <div class="skill__HTML">
+                    <div class="skill__HTML" data-aos="fade-up" data-aos-duration="600">
                         <p class="skills__name subtitles">HTML5</p>
                         <img src="assets/img/HTML.png" class="skill__HTML--img">
                     </div>
 
-                    <div class="skill__JS">
+                    <div class="skill__JS" data-aos="fade-up" data-aos-duration="800">
                         <p class="skills__name subtitles">JavaScript</p>
                         <img src="assets/img/JS.png" class="skill__JS--img">
                     </div>
 
-                    <div class="skill__JS">
+                    <div class="skill__JS" data-aos="fade-up" data-aos-duration="1000">
                         <p class="skills__name subtitles">React</p>
                         <img src="assets/img/REACT.png" class="skill__JS--img">
                     </div>
@@ -167,7 +171,7 @@
         <div class="portfolio__box">
             <h2 class="portfolio__title titles">Portafolio</h2>
             <div class="portfolio__projects">
-                <div class="portfolio__project1">
+                <div class="portfolio__project1" data-aos="fade-up-right">
                     <a href="https://il-rickandmortylocations.netlify.app" target='_blank' class="portfolio__link1">
                         <img src="assets/img/project1.png" class="portfolio__project--img">
                         <h3 class="portfolio__project--title subtitles">Rick And Morty</h3>
@@ -176,7 +180,7 @@
                         Rick And Morty buscando mediante un número comprendido entre el 1 y el 126.</p>
                 </div>
 
-                <div class="portfolio__project2">
+                <div class="portfolio__project2" data-aos="fade-up">
                     <a href="https://il-pokedex.netlify.app" target="_blank" class="portfolio__link2">
                         <img src="assets/img/project2.png" class="portfolio__project--img">
                         <h3 class="portfolio__project--title subtitles">Pokédex</h3>
@@ -186,7 +190,7 @@
                         visualización.</p>
                 </div>
 
-                <div class="portfolio__project3">
+                <div class="portfolio__project3" data-aos="fade-up-left">
                     <a href="https://il-weather-app.netlify.app" target='_blank' class="portfolio__link3">
                         <img src="assets/img/project3.png" class="portfolio__project--img">
                         <h3 class="portfolio__project--title subtitles">Weather App</h3>
@@ -205,22 +209,31 @@
     <div id="cont" class="contact">
         <h2 class="contact__title titles">Contacto</h2>
         <div class="contact__box">
-            <a href="https://wa.me/529931093194?text=Hola!" class="contact-red whatsapp" target="_blank">
+            <a href="https://wa.me/529931093194?text=Hola!" class="contact-red whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-duration="700" data-aos-offset="100">
                 <i class='bx bxl-whatsapp contact-icon'></i>
 
             </a>
-            <a href="mailto:julio4003@hotmail.com" class="contact-red email" target="_blank">
+            <a href="mailto:julio4003@hotmail.com" class="contact-red email" target="_blank" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-offset="100">
                 <i class='bx bx-envelope contact-icon'></i>
 
             </a>
 
-            <a href="https://www.linkedin.com/in/julio-enrique/" class="contact-red linkedin" target="_blank">
+            <a href="https://www.linkedin.com/in/julio-enrique/" class="contact-red linkedin" target="_blank" data-aos="zoom-in-up" data-aos-duration="1700" data-aos-offset="100">
                 <i class="fa-brands fa-linkedin contact-icon"></i>
             </a>
         </div>
+
+        <h3 class="subtitles footer-msg">Hecho con el corazón por mí.</h3>
     </div>
 
     <script src="assets\js\main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
