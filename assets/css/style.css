@@ -526,6 +526,46 @@ body {
     transition: 600ms ease;
     box-shadow: 1px 1px 9px 3px rgba(255, 149, 232, 0.46);
   }
+
+}
+
+/* EXPERIENCE */
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: auto;
+  background-image: linear-gradient(90deg, rgba(133, 110, 191, 0.6) 2%,
+      rgba(139, 62, 118, 0.6) 43%, rgba(33, 10, 18, 0.6) 89%), url(../img/experience.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.experience__box {
+  max-width: 89%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.experience__position {
+  font-size: 35px;
+  font-family: var(--favorite-font-family);
+  font-weight: 600;
+  color: var(--introduction-color);
+  text-decoration: underline;
+}
+
+.experience__text {
+  font-size: 22px;
+  font-family: var(--favorite-font-family);
+  font-weight: 600;
+  color: var(--introduction-color);
+  text-align: justify;
 }
 
 /* SKILLS */

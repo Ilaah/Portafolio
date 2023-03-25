@@ -1,243 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Julio</title>
-    <link rel="shortcut icon" href="assets/img/Julio&Mich.svg">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets\css\style.css">
-    <script src="https://kit.fontawesome.com/8eb019b6e8.js" crossorigin="anonymous"></script>
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-</head>
+    <link rel="shortcut icon" href="assets/img/Julio&Mich.svg" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets\css\style.css" />
+    <script
+      src="https://kit.fontawesome.com/8eb019b6e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- NAVBAR -->
     <header class="navbar">
-        <div class="navbar__container">
+      <div class="navbar__container">
+        <nav class="navbar__nav">
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="#intro" class="navbar__link intro">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__link about">Acerca de mí</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#skill" class="navbar__link skill">Habilidades</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#portf" class="navbar__link portf">Portafolio</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#cont" class="navbar__link cont">Contacto</a>
+            </li>
+          </ul>
+        </nav>
 
-            <nav class="navbar__nav">
-                <ul class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href='#intro' class="navbar__link intro">Home</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href='#about' class="navbar__link about">Acerca de mí</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href='#skill' class="navbar__link skill">Habilidades</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href='#portf' class="navbar__link portf">Portafolio</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href='#cont' class="navbar__link cont">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="navbar__btn">
-                <button id="navbarBtn" class="navbar__btn-link">
-                    <i class='bx bx-menu open-menu'></i>
-                    <i class="fa-solid fa-xmark close-menu"></i>
-                </button>
-            </div>
+        <div class="navbar__btn">
+          <button id="navbarBtn" class="navbar__btn-link">
+            <i class="bx bx-menu open-menu"></i>
+            <i class="fa-solid fa-xmark close-menu"></i>
+          </button>
         </div>
+      </div>
     </header>
     <!-- HOME PAGE -->
     <div id="intro" class="introduction">
-        <div class="introduction__decoration"></div>
-        <div class="introduction__box" data-aos="fade-up">
-            <h2 class="introduction__name titles">Hola, soy Julio</h2>
-            <img src="assets/img/yo.png" class="introduction__img">
-            <div class="introduction__desarrollador">
-                <h2 class="introduction__name2 titles">Hola, soy Julio</h2>
-                <h2 class="introduction__WD titles">Desarrollador Web Front-End</h2>
-                <p class="introduction__text text">Estoy enfocado en crecer y hacer crecer; fomentando la comunicación,
-                    aportando y recibiendo feedback y ayuda de manera positiva para promover la máxima eficiencia y
-                    crecimiento
-                    en los proyectos que realizo.</p>
-                <section class="introduction-btn-container">
-                    <a href="https://drive.google.com/file/d/14xVJstW0dAy3_Y__KN0O9WBL_FsHIsR1/view?usp=sharing"
-                        target="_blank"><button class="introduction-btn">Explora mi CV</button></a>
-                    <a href=#cont><button class="introduction-btn introduction-btn__contact" data-aos="zoom-in-up"
-                            data-aos-offset="100" data-aos-easing="ease-in-sine"
-                            data-aos-anchor-placement="top-bottom">Contáctame</button></a>
-                </section>
-            </div>
+      <div class="introduction__decoration"></div>
+      <div class="introduction__box" data-aos="fade-up">
+        <h2 class="introduction__name titles">Hola, soy Julio</h2>
+        <img src="assets/img/yo.png" class="introduction__img" />
+        <div class="introduction__desarrollador">
+          <h2 class="introduction__name2 titles">Hola, soy Julio</h2>
+          <h2 class="introduction__WD titles">Desarrollador Web Front-End</h2>
+          <p class="introduction__text text">
+            Estoy enfocado en crecer y hacer crecer; fomentando la comunicación,
+            aportando y recibiendo feedback y ayuda de manera positiva para
+            promover la máxima eficiencia y crecimiento en los proyectos que
+            realizo.
+          </p>
+          <section class="introduction-btn-container">
+            <a
+              href="https://drive.google.com/file/d/14xVJstW0dAy3_Y__KN0O9WBL_FsHIsR1/view?usp=sharing"
+              target="_blank"
+              ><button class="introduction-btn">Explora mi CV</button></a
+            >
+            <a href="#cont"
+              ><button
+                class="introduction-btn introduction-btn__contact"
+                data-aos="zoom-in-up"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-anchor-placement="top-bottom"
+              >
+                Contáctame
+              </button></a
+            >
+          </section>
         </div>
-        <div class="introduction__box-decoration"></div>
+      </div>
+      <div class="introduction__box-decoration"></div>
     </div>
 
     <div class="space"></div>
 
     <!-- ABOUT ME -->
     <div id="about" class="aboutMe">
-        <div class="aboutMe__box">
-            <h2 class="aboutMe__title titles">Acerca de mí</h2>
-            <p class="aboutMe__text text">Soy un Desarrollador Web Front-End con experiencia en React JS. He
-                desarrollado proyectos solo y en conjunto con otros programadores, creciendo con rápidez. Soy alguien
-                tranquilo, amable y sobre todo comunicativo. Me gustan los videojuegos.</p>
-            <h2 class="aboutMe__studies--subtitlte">Estudios</h2>
+      <div class="aboutMe__box">
+        <h2 class="aboutMe__title titles">Acerca de mí</h2>
+        <p class="aboutMe__text text">
+          Soy un Desarrollador Web Front-End con experiencia en React JS. He
+          desarrollado proyectos solo y en conjunto con otros programadores,
+          creciendo con rápidez. Soy alguien tranquilo, amable y sobre todo
+          comunicativo. Me gustan los videojuegos.
+        </p>
+        <h2 class="aboutMe__studies--subtitlte">Estudios</h2>
 
-            <div class="aboutMe__studies" data-aos="fade-right">
-                <img src="assets/img/Logo_Aca.png" class="aboutMe__studies-img">
-                <div class="aboutMe__separator">
-                    <span class="abouteMe__negritas">Fundamentos en HTML, CSS y JavaScript</span>
-                    <p>Academlo - Academia de Tecnología y Ciencias de la Computación</p>
-                    <p class="aboutMe__studies--years">Febrero 2022 - Mayo 2022</p>
-                    <a class="aboutMe__studies-link" href="https://certificates.academlo.com/en/verify/32836971280311"
-                        target="_blank"> <button class="aboutMe_studies-btn">Certificado <i
-                                class="fa-regular fa-share-from-square"></i></button> </a>
-                </div>
-            </div>
-
-            <div class="aboutMe__studies" data-aos="fade-right">
-                <img src="assets/img/Logo_Aca.png" class="aboutMe__studies-img">
-                <div class="aboutMe__separator">
-                    <span class="abouteMe__negritas">Desarrollo Front-End con React</span>
-                    <p>Academlo - Academia de Tecnología y Ciencias de la Computación</p>
-                    <p class="aboutMe__studies--years">Mayo 2022 - Julio 2022</p>
-                    <a class="aboutMe__studies-link" href="https://certificates.academlo.com/en/verify/66352754872682"
-                        target="_blank"> <button class="aboutMe_studies-btn">Certificado <i
-                                class="fa-regular fa-share-from-square"></i></button> </a>
-                </div>
-            </div>
+        <div class="aboutMe__studies" data-aos="fade-right">
+          <img src="assets/img/Logo_Aca.png" class="aboutMe__studies-img" />
+          <div class="aboutMe__separator">
+            <span class="abouteMe__negritas"
+              >Fundamentos en HTML, CSS y JavaScript</span
+            >
+            <p>
+              Academlo - Academia de Tecnología y Ciencias de la Computación
+            </p>
+            <p class="aboutMe__studies--years">Febrero 2022 - Mayo 2022</p>
+            <a
+              class="aboutMe__studies-link"
+              href="https://certificates.academlo.com/en/verify/32836971280311"
+              target="_blank"
+            >
+              <button class="aboutMe_studies-btn">
+                Certificado <i class="fa-regular fa-share-from-square"></i>
+              </button>
+            </a>
+          </div>
         </div>
+
+        <div class="aboutMe__studies" data-aos="fade-right">
+          <img src="assets/img/Logo_Aca.png" class="aboutMe__studies-img" />
+          <div class="aboutMe__separator">
+            <span class="abouteMe__negritas"
+              >Desarrollo Front-End con React</span
+            >
+            <p>
+              Academlo - Academia de Tecnología y Ciencias de la Computación
+            </p>
+            <p class="aboutMe__studies--years">Mayo 2022 - Julio 2022</p>
+            <a
+              class="aboutMe__studies-link"
+              href="https://certificates.academlo.com/en/verify/66352754872682"
+              target="_blank"
+            >
+              <button class="aboutMe_studies-btn">
+                Certificado <i class="fa-regular fa-share-from-square"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="space"></div>
+
+    <div id="experience" class="experience">
+      <div class="experience__box">
+        <h2 class="experience__title titles">Experiencia</h2>
+
+        <div class="experience__section">
+          <h3 class="experience__position">Flutter Internship</h3>
+          <h3 class="experience__company text">
+            Nuclea Solutions Enero 2023 - Marzo 2023
+          </h3>
+          <p class="experience__text">
+            En mi estancia en Nuclea Solutions fui encargado de desarrollar un
+            e-commerce; desde la maquetación hasta la realización de un diseño
+            responsivo, creación de funciones y administración de su base de
+            datos; tuve una gran eficacia en la resolución de problemas durante
+            el desarrollo; manejo de lógica, trabajo colaborativo y sobre todo
+            comunicación eficaz. En este trabajo empleé las tecnologías: HTML,
+            CSS, Firebase y FlutterFlow. Utilicé la metodología Mobile-First.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class="space"></div>
 
     <!-- SKILLS -->
     <div id="skill" class="skills">
-        <h2 class="skills__title titles">Habilidades</h2>
-        <div class="skills__group">
-            <div class="soft-skills">
-                <h2 class="subtitles">Blandas</h2>
-                <section class="soft-skills__list">
-                    <div class="soft-skill" data-aos="fade-up-right">
-                        <h2 class="subtitles">Comunicación</h2>
-                        <p>Ya sea en mi vida personal como en la laboral, siempre he
-                            priorizado la comunicación como la mejor herramienta para la resolución de problemas.
-                        </p>
-                    </div>
-                    <div class="soft-skill" data-aos="fade-up">
-                        <h2 class="subtitles">Trabajo en equipo</h2>
-                        <p>El trabajo en equipo es fundamental en toda empresa y lo sé perfectamente;
-                            cooperar para mayor eficiencia y ayudarse mutuamente es la base del crecimiento.
-                        </p>
-                    </div>
-                    <div class="soft-skill" data-aos="fade-up-left">
-                        <h2 class="subtitles">Curiosidad</h2>
-                        <p>Me gusta que me hagan preguntas, así como me gusta preguntar sin temor
-                            o pena alguna para promover la confianza, respeto y desarrollo de todos.
-                        </p>
-                    </div>
-                </section>
+      <h2 class="skills__title titles">Habilidades</h2>
+      <div class="skills__group">
+        <div class="soft-skills">
+          <h2 class="subtitles">Blandas</h2>
+          <section class="soft-skills__list">
+            <div class="soft-skill" data-aos="fade-up-right">
+              <h2 class="subtitles">Comunicación</h2>
+              <p>
+                Ya sea en mi vida personal como en la laboral, siempre he
+                priorizado la comunicación como la mejor herramienta para la
+                resolución de problemas.
+              </p>
             </div>
-            <div class="skills__box">
-                <h2 class="subtitles">Técnicas</h2>
-                <div class="skills__cards">
-                    <div class="skill__CSS" data-aos="fade-up" data-aos-duration="400">
-                        <p class="skills__name subtitles">CSS3</p>
-                        <img src="assets/img/CSS.png" class="skill__CSS--img">
-                    </div>
-
-                    <div class="skill__HTML" data-aos="fade-up" data-aos-duration="600">
-                        <p class="skills__name subtitles">HTML5</p>
-                        <img src="assets/img/HTML.png" class="skill__HTML--img">
-                    </div>
-
-                    <div class="skill__JS" data-aos="fade-up" data-aos-duration="800">
-                        <p class="skills__name subtitles">JavaScript</p>
-                        <img src="assets/img/JS.png" class="skill__JS--img">
-                    </div>
-
-                    <div class="skill__JS" data-aos="fade-up" data-aos-duration="1000">
-                        <p class="skills__name subtitles">React</p>
-                        <img src="assets/img/REACT.png" class="skill__JS--img">
-                    </div>
-                </div>
+            <div class="soft-skill" data-aos="fade-up">
+              <h2 class="subtitles">Trabajo en equipo</h2>
+              <p>
+                El trabajo en equipo es fundamental en toda empresa y lo sé
+                perfectamente; cooperar para mayor eficiencia y ayudarse
+                mutuamente es la base del crecimiento.
+              </p>
             </div>
+            <div class="soft-skill" data-aos="fade-up-left">
+              <h2 class="subtitles">Curiosidad</h2>
+              <p>
+                Me gusta que me hagan preguntas, así como me gusta preguntar sin
+                temor o pena alguna para promover la confianza, respeto y
+                desarrollo de todos.
+              </p>
+            </div>
+          </section>
         </div>
+        <div class="skills__box">
+          <h2 class="subtitles">Técnicas</h2>
+          <div class="skills__cards">
+            <div class="skill__CSS" data-aos="fade-up" data-aos-duration="400">
+              <p class="skills__name subtitles">CSS3</p>
+              <img src="assets/img/CSS.png" class="skill__CSS--img" />
+            </div>
+
+            <div class="skill__HTML" data-aos="fade-up" data-aos-duration="600">
+              <p class="skills__name subtitles">HTML5</p>
+              <img src="assets/img/HTML.png" class="skill__HTML--img" />
+            </div>
+
+            <div class="skill__JS" data-aos="fade-up" data-aos-duration="800">
+              <p class="skills__name subtitles">JavaScript</p>
+              <img src="assets/img/JS.png" class="skill__JS--img" />
+            </div>
+
+            <div class="skill__JS" data-aos="fade-up" data-aos-duration="1000">
+              <p class="skills__name subtitles">React</p>
+              <img src="assets/img/REACT.png" class="skill__JS--img" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="space"></div>
 
     <!-- PORTFOLIO -->
     <div id="portf" class="portfolio">
-        <div class="portfolio__box">
-            <h2 class="portfolio__title titles">Portafolio</h2>
-            <div class="portfolio__projects">
-                <div class="portfolio__project1" data-aos="fade-up-right">
-                    <a href="https://il-rickandmortylocations.netlify.app" target='_blank' class="portfolio__link1">
-                        <img src="assets/img/project1.png" class="portfolio__project--img">
-                        <h3 class="portfolio__project--title subtitles">Rick And Morty</h3>
-                    </a>
-                    <p class="portfolio__text">Es un proyecto donde puedes consultar locaciones del universo de
-                        Rick And Morty buscando mediante un número comprendido entre el 1 y el 126.</p>
-                </div>
+      <div class="portfolio__box">
+        <h2 class="portfolio__title titles">Portafolio</h2>
+        <div class="portfolio__projects">
+          <div class="portfolio__project1" data-aos="fade-up-right">
+            <a
+              href="https://il-rickandmortylocations.netlify.app"
+              target="_blank"
+              class="portfolio__link1"
+            >
+              <img
+                src="assets/img/project1.png"
+                class="portfolio__project--img"
+              />
+              <h3 class="portfolio__project--title subtitles">
+                Rick And Morty
+              </h3>
+            </a>
+            <p class="portfolio__text">
+              Es un proyecto donde puedes consultar locaciones del universo de
+              Rick And Morty buscando mediante un número comprendido entre el 1
+              y el 126.
+            </p>
+          </div>
 
-                <div class="portfolio__project2" data-aos="fade-up">
-                    <a href="https://il-pokedex.netlify.app" target="_blank" class="portfolio__link2">
-                        <img src="assets/img/project2.png" class="portfolio__project--img">
-                        <h3 class="portfolio__project--title subtitles">Pokédex</h3>
-                    </a>
-                    <p class="portfolio__text">Es un sitio web completo en el cual podrás buscar y encontrar tus
-                        pokémones favoritos filtrándolos por categoría; incluso puedes alternar el modo de
-                        visualización.</p>
-                </div>
+          <div class="portfolio__project2" data-aos="fade-up">
+            <a
+              href="https://il-pokedex.netlify.app"
+              target="_blank"
+              class="portfolio__link2"
+            >
+              <img
+                src="assets/img/project2.png"
+                class="portfolio__project--img"
+              />
+              <h3 class="portfolio__project--title subtitles">Pokédex</h3>
+            </a>
+            <p class="portfolio__text">
+              Es un sitio web completo en el cual podrás buscar y encontrar tus
+              pokémones favoritos filtrándolos por categoría; incluso puedes
+              alternar el modo de visualización.
+            </p>
+          </div>
 
-                <div class="portfolio__project3" data-aos="fade-up-left">
-                    <a href="https://il-weather-app.netlify.app" target='_blank' class="portfolio__link3">
-                        <img src="assets/img/project3.png" class="portfolio__project--img">
-                        <h3 class="portfolio__project--title subtitles">Weather App</h3>
-                    </a>
-                    <p class="portfolio__text">Es una linda y sencilla app que te pedirá acceso a tu ubicación
-                        para darte el clima de la ciudad donde te encuentres, puedes alternar entre grados C° y F°.
-                    </p>
-                </div>
-            </div>
+          <div class="portfolio__project3" data-aos="fade-up-left">
+            <a
+              href="https://il-weather-app.netlify.app"
+              target="_blank"
+              class="portfolio__link3"
+            >
+              <img
+                src="assets/img/project3.png"
+                class="portfolio__project--img"
+              />
+              <h3 class="portfolio__project--title subtitles">Weather App</h3>
+            </a>
+            <p class="portfolio__text">
+              Es una linda y sencilla app que te pedirá acceso a tu ubicación
+              para darte el clima de la ciudad donde te encuentres, puedes
+              alternar entre grados C° y F°.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="space"></div>
 
     <!-- CONTACT -->
     <div id="cont" class="contact">
-        <h2 class="contact__title titles">Contacto</h2>
-        <div class="contact__box">
-            <a href="https://wa.me/529931093194?text=Hola!" class="contact-red whatsapp" target="_blank"
-                data-aos="zoom-in-up" data-aos-duration="700" data-aos-offset="100">
-                <i class='bx bxl-whatsapp contact-icon'></i>
+      <h2 class="contact__title titles">Contacto</h2>
+      <div class="contact__box">
+        <a
+          href="https://wa.me/529931093194?text=Hola!"
+          class="contact-red whatsapp"
+          target="_blank"
+          data-aos="zoom-in-up"
+          data-aos-duration="700"
+          data-aos-offset="100"
+        >
+          <i class="bx bxl-whatsapp contact-icon"></i>
+        </a>
+        <a
+          href="mailto:julio4003@hotmail.com"
+          class="contact-red email"
+          target="_blank"
+          data-aos="zoom-in-up"
+          data-aos-duration="1200"
+          data-aos-offset="100"
+        >
+          <i class="bx bx-envelope contact-icon"></i>
+        </a>
 
-            </a>
-            <a href="mailto:julio4003@hotmail.com" class="contact-red email" target="_blank" data-aos="zoom-in-up"
-                data-aos-duration="1200" data-aos-offset="100">
-                <i class='bx bx-envelope contact-icon'></i>
+        <a
+          href="https://www.linkedin.com/in/julio-enrique/"
+          class="contact-red linkedin"
+          target="_blank"
+          data-aos="zoom-in-up"
+          data-aos-duration="1700"
+          data-aos-offset="100"
+        >
+          <i class="fa-brands fa-linkedin contact-icon"></i>
+        </a>
+      </div>
 
-            </a>
-
-            <a href="https://www.linkedin.com/in/julio-enrique/" class="contact-red linkedin" target="_blank"
-                data-aos="zoom-in-up" data-aos-duration="1700" data-aos-offset="100">
-                <i class="fa-brands fa-linkedin contact-icon"></i>
-            </a>
-        </div>
-
-        <h3 class="subtitles footer-msg">Hecho con el corazón por mí.</h3>
+      <h3 class="subtitles footer-msg">Hecho con el corazón por mí.</h3>
     </div>
 
     <script src="assets\js\main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 700,
-            once: true
-        });
+      AOS.init({
+        duration: 700,
+        once: true,
+      });
     </script>
-</body>
-
+  </body>
 </html>
